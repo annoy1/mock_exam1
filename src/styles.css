@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #007bff;
+  width: 100%;
+}
+
+.mock-exam {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+}
+
+.start-page {
+  text-align: center;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.start-button,
+.next-button,
+.previous-button,
+.submit-button,
+.restart-button {
+  font-size: 25px;
+  font-weight: 500;
+  color: #007bff;
+  padding: 15px 30px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.start-button:hover,
+.next-button:hover,
+.previous-button:hover,
+.submit-button:hover,
+.restart-button:hover {
+  background-color: #4748ac;
+  color: #fff;
+}
+
+.option-button {
+  margin-top: 10px;
+  padding: 16px 30px;
+  font-size: 14px;
+  background-color: #f8f9fa;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.option-button:hover,
+.option-button.selected {
+  color: #004085;
+  background: #cce5ff;
+  border: 1px solid #b8daff;
+}
+
+.timer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.result {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.answer {
+  margin-top: 10px;
+  padding: 10px;
+  list-style: none;
+  border-radius: 4px;
+}
+
+.correct {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.incorrect {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.incorrect-answer {
+  font-weight: bold;
+  color: #721c24;
+}
+
+.correct-answer {
+  font-weight: bold;
+  color: #155724;
+}
+
+.explanation {
+  border-radius: 5px;
+  display: flex;
+  padding: 40px 40px;
+  width: 1000px;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  transform: translate(13%, -20%) scale(0.9);
+  pointer-events: none;
+}
